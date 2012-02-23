@@ -2,15 +2,27 @@ package voormichiel;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Lalalala salary lalala
+ *
+ */
 public class SalarySystem {
 
 	private List<Employee> employees = new ArrayList<Employee>();
 
+	/**
+	 * save employee employee
+	 * @param employee
+	 */
 	public void saveEmployee(Employee employee) {
 		employees.add(employee);
 	}
-
+	/**
+	 * Search
+	 * @param name
+	 * @return
+	 * @throws EmployeeNotFoundException
+	 */
 	public Employee searchEmployeeByName(String name) throws EmployeeNotFoundException {
 		for(Employee employee : employees) {
 			if(employee.isNameTheSame(name)) {
@@ -28,11 +40,17 @@ public class SalarySystem {
 		saveEmployee(medior);
 		saveEmployee(senior);
 	}
+	/**
+	 * raise
+	 * @param employee
+	 */
 	public void raiseSalary(Employee employee) {
 		employee.raiseSalary(employee.getSalery());
 		System.out.println(employee.raiseString());
 	}
-	
+	/**
+	 * print
+	 */
 	public void printAllEmployees() {
 		for (Employee employee : employees) {
 			System.out.println(employee);

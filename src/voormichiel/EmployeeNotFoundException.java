@@ -1,5 +1,8 @@
 package voormichiel;
-
+/**
+ * A exception which can be thrown when a employee is not found.
+ *
+ */
 public class EmployeeNotFoundException extends Exception{
 
 	/**

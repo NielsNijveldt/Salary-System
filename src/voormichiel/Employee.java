@@ -1,5 +1,9 @@
 package voormichiel;
 
+/**
+ * The employee is a abstract class. The class is intended to create new Employees
+ *
+ */
 public abstract class Employee {
 	
 	protected String name;
@@ -10,7 +14,11 @@ public abstract class Employee {
 		this.salery = inputSalery;
 	}
 	
-	
+	/**
+	 * This method checks if the incoming string is the same as the name of the employee.
+	 * @param othername 
+	 * @return true if the same else false
+	 */
 	public boolean isNameTheSame(String othername) {
 		if(this.name.equals(othername)) {
 			return true;
@@ -18,7 +26,11 @@ public abstract class Employee {
 		return false;
 	}
 	
-	public abstract void raiseSalary(double d);
+	/**
+	 * this method raises the salary of a employee. 
+	 * @param d the amount to raise the salray.
+	 */
+	public abstract void raiseSalary(double amount);
 	
 	public String getName() {
 		return name;

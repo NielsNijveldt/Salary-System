@@ -1,5 +1,9 @@
 package voormichiel;
 
+/**
+ * The JuniorEmployee percentage of 5 to raise
+ *
+ */
 public class JuniorEmployee extends Employee {
 	
 	public JuniorEmployee(String inputName, double inputSalery) {
